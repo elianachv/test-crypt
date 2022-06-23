@@ -22,6 +22,7 @@ jobs:
         node-version: 14
     - run: npm ci
     - run: npm install env-cmd
+    - run: git stash
 
     - name: Unlock environment
       uses: sliteteam/github-action-git-crypt-unlock@1.2.0
